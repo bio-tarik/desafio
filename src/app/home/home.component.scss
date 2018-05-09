@@ -1,0 +1,28 @@
+$cor-principal: teal;
+
+@mixin fonte-principal{
+  font-family: 'Roboto';
+}
+
+.section {
+  height: 100vh;
+
+  &.home {
+    background-color: $cor-principal;
+    padding: 5vmax;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    .titulo {
+      @include fonte-principal;
+      font-size: 10vmax;
+    }
+
+  }
+  &.conteudo {
+    background-color: lighten($color: $cor-principal, $amount: 20);
+  }
+}
