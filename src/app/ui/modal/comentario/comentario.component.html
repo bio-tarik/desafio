@@ -1,0 +1,9 @@
+<button class="mat-raised-button float-right" (click)="close()">X</button>
+<h3>{{this.titulo}}</h3>
+<h4>{{this.emoticon}}</h4>
+<p>Dica? Reclamação? Só um obrigado?</p>
+<p>Pode escrever aqui pra gente!</p>
+<div>
+    <textarea placeholder="Seu comentário" class="float-left" #text name="" id="comentario" cols="30" rows="10"></textarea>
+    <button class="float-left" (click)=enviarComentario(text.value)>Enviar Comentário</button>
+</div>
