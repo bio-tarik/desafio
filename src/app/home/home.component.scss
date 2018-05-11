@@ -1,4 +1,4 @@
-$cor-principal: teal;
+$cor-principal: rgba(226,100,90, .7);
 
 @mixin fonte-principal{
   font-family: 'Roboto';
@@ -6,23 +6,33 @@ $cor-principal: teal;
 
 .section {
   height: 100vh;
-
+  padding: 5vmax;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  -ms-box-sizing:     border-box;
+  -o-box-sizing:      border-box;
+  box-sizing:         border-box;
+  
   &.home {
     background-color: $cor-principal;
-    padding: 5vmax;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    -ms-box-sizing:     border-box;
-    -o-box-sizing:      border-box;
-    box-sizing:         border-box;
 
-    .titulo {
+    .titulo{
       @include fonte-principal;
-      font-size: 10vmax;
+      font-weight: lighter;
+      font-size: 82px;
+      
+      h3{
+        font-weight: inherit;
+      }
+
+      h6{
+        font-size: initial;
+        font-weight: inherit;
+      }
     }
 
   }
   &.conteudo {
-    background-color: lighten($color: $cor-principal, $amount: 20);
+    background-color: lighten($color: $cor-principal, $amount: 30);
   }
 }

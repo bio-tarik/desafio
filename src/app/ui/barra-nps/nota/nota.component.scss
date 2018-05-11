@@ -8,15 +8,17 @@ $cor-notas: #ababab;
 
 div{
     @include centralizar;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: $cor-notas;
-    margin: 0px 5px 0px 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid $cor-notas;
+    margin: 0px 15px 0px 15px;
 }
 
 div, p{
     cursor: pointer;
+    font-size: 10px;
+    font-weight: lighter;
 
     &:hover{
         background-color: lighten($color: $cor-notas, $amount: 100);

@@ -6,7 +6,7 @@ import { ModalService } from '../../../services/modal.service';
 @Component({
   selector: 'app-agradecimento',
   templateUrl: './agradecimento.component.html',
-  styleUrls: ['./agradecimento.component.css']
+  styleUrls: ['./agradecimento.component.scss']
 })
 export class AgradecimentoComponent implements OnInit {
 

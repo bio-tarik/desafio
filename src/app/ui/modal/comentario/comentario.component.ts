@@ -6,7 +6,7 @@ import { ModalService } from '../../../services/modal.service';
 @Component({
   selector: 'app-comentario',
   templateUrl: './comentario.component.html',
-  styleUrls: ['./comentario.component.css']
+  styleUrls: ['./comentario.component.scss']
 })
 export class ComentarioComponent implements OnInit {
   private id:string = '';
@@ -25,10 +25,10 @@ export class ComentarioComponent implements OnInit {
     this.nota = data.obj.nota;
 
     if (this.nota <= 6) {
-      this.titulo = 'Ahhh que pena';
+      this.titulo = 'Nós queremos te ouvir';
       this.emoticon = ':(';
     } else if (this.nota <= 8) {
-      this.titulo = 'Nos ajude a melhorar';
+      this.titulo = 'Ficaremos felizes com sua opinião';
       this.emoticon = ':|';
     }
     else{
@@ -45,13 +45,15 @@ export class ComentarioComponent implements OnInit {
   }
 
   enviarComentario(comentario){
-      this.npsService.salvarComentario(this.id, comentario).subscribe(ret => {
-        this.modalService.callComponentMethod(null);
-      },
-      error => {
-        var errors = JSON.parse(error._body).errors;
-        console.log("this.errors ", errors);
-      });
+      this.modalService.callComponentMethod(null);
+
+      // this.npsService.salvarComentario(this.id, comentario).subscribe(ret => {
+      //   this.modalService.callComponentMethod(null);
+      // },
+      // error => {
+      //   var errors = JSON.parse(error._body).errors;
+      //   console.log("this.errors ", errors);
+      // });
       
     this.matDialogRef.close();
   }

@@ -1,0 +1,40 @@
+textarea{
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-family: 'Roboto';
+}
+
+p{
+    color: #a0a0a0;
+    font-size: 15px;
+}
+
+
+.titulo{
+    font-weight: lighter;
+    margin-bottom: 5%;
+    strong{
+        font-size: 200%;
+        float: right;
+        cursor: default;
+    }
+}
+
+.fechar{
+    background-color: transparent;
+    border: 0px;
+    font-size: 20px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.enviar{
+    background-color: #bee6ff;
+    font-size: 18px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    float: right;
+}

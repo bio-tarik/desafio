@@ -18,13 +18,15 @@ export class NotaComponent implements OnInit {
   }
 
   salvarNota(selecao) {
-    this.npsService.salvarNota(Number(selecao)).subscribe(ret => {
-        this.callMethod({ id: ret.data.id, nota: this.nota });
-      },
-      error => {
-        var errors = JSON.parse(error._body).errors;
-        console.log("this.errors ", errors);
-      });
+    this.callMethod({ id: '_qj7m725tl', nota: this.nota });
+    
+    // this.npsService.salvarNota(Number(selecao)).subscribe(ret => {
+    //     this.callMethod({ id: ret.data.id, nota: this.nota });
+    //   },
+    //   error => {
+    //     var errors = JSON.parse(error._body).errors;
+    //     console.log("this.errors ", errors);
+    //   });
   }
 
   callMethod = function (id) {

@@ -8,33 +8,21 @@ $cor-notas: #ababab;
 
 .barra{
     width: 100vw;
-    height: 20vh;
-    background-color: rgba(255, 255, 255, 0.5);
+    height: 18vh;
+    background-color: rgb(190, 230, 255);
     position: fixed;
     bottom: 0;
+    padding-top: 2%;
     font-family: 'Roboto';
-    font-size: 2vmax;
     text-align: center;
+    
+    h3{
+        font-size: 17px;
+        font-weight: lighter;
+    }
 
     .notas{
         @include centralizar;
         height: 80%;
-        
-        div{
-            @include centralizar;
-            width: 40px;
-            height: 40px;
-            border-radius: 5px;
-            background-color: $cor-notas;
-            margin: 0px 5px 0px 5px;
-        }
-
-        div, p{
-            cursor: pointer;
-
-            &:hover{
-                background-color: lighten($color: $cor-notas, $amount: 100);
-            }
-        }
     }
 }
