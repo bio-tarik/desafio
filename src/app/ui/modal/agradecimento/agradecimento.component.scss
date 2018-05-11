@@ -1,20 +1,27 @@
 .titulo{
     font-weight: lighter;
     margin-bottom: 5%;
+    text-align: center;
 }
 
-.enviar{
-    background-color: #bee6ff;
-    font-size: 18px;
-    padding: 5px;
-    border: 0px;
-    border-radius: 10px;
-    float: right;
-    cursor: pointer;
+.divBotao{
+    margin: auto;
+    width: 100px;
+    .enviar{
+        background-color: #bee6ff;
+        font-size: 18px;
+        padding: 5px;
+        border: 0px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: white;
+    }
 }
 
 p{
     color: #a0a0a0;
-    font-size: 15px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 105%;
     margin: 5% 0% 5% 0%;
 }

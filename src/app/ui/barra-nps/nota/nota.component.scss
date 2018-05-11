@@ -8,10 +8,10 @@ $cor-notas: #ababab;
 
 div{
     @include centralizar;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     border-radius: 100%;
-    border: 1px solid $cor-notas;
+    border: 2px solid $cor-notas;
     margin: 0px 15px 0px 15px;
 }
 

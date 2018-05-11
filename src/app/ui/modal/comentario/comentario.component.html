@@ -1,8 +1,21 @@
-<button class="float-right fechar" (click)="close()">X</button>
-<h3 class="titulo">{{this.titulo}} <strong>{{this.emoticon}}</strong></h3>
-<p>Dica? Reclamação? Só um obrigado?</p>
-<p>Pode escrever aqui pra gente!</p>
-<div>
-    <textarea autofocus placeholder="Seu comentário" class="float-left" #text name="" id="comentario" cols="30" rows="10"></textarea>
-    <button class="float-left enviar" (click)=enviarComentario(text.value)>Enviar Comentário</button>
+<div class="modal">
+  <button class="float-right fechar" (click)="close()">X</button>
+  <div class="divTitulo">
+    <div>
+      <h3 class="titulo">{{this.titulo}} <br>
+        <strong>{{this.emoticon}}</strong>
+      </h3>
+    </div>
+  </div>
+
+  <div class="divTexto">
+    <p>Dica? Reclamação? Só um obrigado?</p>
+    <p>Pode escrever aqui pra gente!</p>
+    <div>
+      <textarea autofocus placeholder="Seu comentário" class="" #text name="" id="comentario" cols="30" rows="10"></textarea>
+      <div class="divBotao">
+          <button class="enviar alinhar-h" (click)=enviarComentario(text.value)>Enviar Comentário</button>
+      </div>
+    </div>
+  </div>
 </div>

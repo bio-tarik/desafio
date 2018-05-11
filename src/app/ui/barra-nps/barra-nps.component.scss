@@ -9,12 +9,13 @@ $cor-notas: #ababab;
 .barra{
     width: 100vw;
     height: 18vh;
-    background-color: rgb(190, 230, 255);
+    background-color: rgb(200, 240, 255);
     position: fixed;
-    bottom: 0;
+    bottom: 50px;
     padding-top: 2%;
     font-family: 'Roboto';
     text-align: center;
+    color: $cor-notas;
     
     h3{
         font-size: 17px;
@@ -23,6 +24,20 @@ $cor-notas: #ababab;
 
     .notas{
         @include centralizar;
-        height: 80%;
+        height: 50%;
+
+        .com-legenda{
+            
+            p{
+                margin-top: 5px;
+                position: relative;
+                font-size: 12px;
+                
+                &.left{
+                    left: -50%;
+                }
+            }
+
+        }
     }
 }
