@@ -1,2 +1,2 @@
-<div #me (click)="salvarNota(me.innerText)" class="animated fadeIn" [style.animation-delay]="obterValorDelay()">
+<div #me (click)="salvarNota(me.dataset.nota)" [attr.data-nota]="nota" class="animated fadeIn" [style.animation-delay]="obterValorDelay()">
 </div>
