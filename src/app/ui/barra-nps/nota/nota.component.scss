@@ -19,8 +19,15 @@ div, p{
     cursor: pointer;
     font-size: 10px;
     font-weight: lighter;
+    transition: transform .4s ease-in-out, background-color .2s ease-in-out;
+    
 
     &:hover{
         background-color: lighten($color: $cor-notas, $amount: 100);
+        transform: scale(1.4);
+    }
+
+    &:active{
+        background-color: rgba(226, 100, 90, 1);
     }
 }

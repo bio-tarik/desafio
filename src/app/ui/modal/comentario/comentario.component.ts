@@ -45,15 +45,15 @@ export class ComentarioComponent implements OnInit {
   }
 
   enviarComentario(comentario){
-      this.modalService.callComponentMethod(null);
+      // this.modalService.callComponentMethod(null);
 
-      // this.npsService.salvarComentario(this.id, comentario).subscribe(ret => {
-      //   this.modalService.callComponentMethod(null);
-      // },
-      // error => {
-      //   var errors = JSON.parse(error._body).errors;
-      //   console.log("this.errors ", errors);
-      // });
+      this.npsService.salvarComentario(this.id, comentario).subscribe(ret => {
+        this.modalService.callComponentMethod(null);
+      },
+      error => {
+        var errors = JSON.parse(error._body).errors;
+        console.log("this.errors ", errors);
+      });
       
     this.matDialogRef.close();
   }
